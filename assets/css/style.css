@@ -59,6 +59,8 @@ section {
     margin: 1rem;
     border-radius: 8px;
     box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.3);
+    transition: all 0.5s;
+    transition-delay: 0.25s;
 }
 
 section ul {
@@ -137,6 +139,11 @@ button:active, button:hover {
     color: #da3b00;
     font-weight: bold;
     text-decoration: none;
+}
+
+/* Highlighting a card on menu click */
+.highlight {
+    box-shadow: 0px 0px 8px 10px tomato;
 }
 
 /* Start for medium and large screens */

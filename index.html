@@ -9,6 +9,7 @@
     </title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/eab391ba4b.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
@@ -18,19 +19,19 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#employment">Employment</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li class="last_nav_item"><a href="#contact">Contact</a></li>
+                <li><a id="abt" href="#about">About</a></li>
+                <li><a id="edu" href="#education">Education</a></li>
+                <li><a id="emp" href="#employment">Employment</a></li>
+                <li><a id="skl" href="#skills">Skills</a></li>
+                <li><a id="proj" href="#projects">Projects</a></li>
+                <li><a id="intr" href="#interests">Interests</a></li>
+                <li class="last_nav_item"><a id="cont" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="about">
+        <section id="about_section" class="about">
             <h2 id="about"><i class="fas fa-user-alt" aria-hidden="true"></i> About</h2>
             <img class="img_mob" src="assets/images/sumeet.jpg">
             <div class="about_content">
@@ -43,7 +44,7 @@
                 </p>
             </div>
         </section>
-        <section class="education">
+        <section id="eduction_section" class="education">
             <h2 id="education"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</h2>
             <div class="dash"></div>
             <p>
@@ -53,7 +54,7 @@
                 <small>Kurukshetra University, Haryana, India</small>
             </p>
         </section>
-        <section class="employment">
+        <section id="employment_section" class="employment">
             <h2 id="employment"><i class="fas fa-briefcase" aria-hidden="true"></i> Employment History</h2>
             <p>
                 Front-end Developer, October 2019 - August 2020<br>
@@ -62,7 +63,7 @@
                 <small>Blippar.com, Gurugram, India</small>
             </p>
         </section>
-        <section class="skills">
+        <section id="skill_section" class="skills">
             <h2 id="skills"><i class="fas fa-cogs" aria-hidden="true"></i> Skills</h2>
             <ul>
                 <li>HTML - Professional</li>
@@ -86,7 +87,7 @@
                 <li>SVG Animation - Beginner</li>
             </ul>
         </section>
-        <section class="projects">
+        <section id="project_section" class="projects">
             <h2 id="projects"><i class="fas fa-project-diagram" aria-hidden="true"></i> Projects</h2>
             <ul>
                 <li><a href="https://kaamwapasi.com/">Kaamwapasi</a> - Website. Developed UI using HTML and CSS.</li>
@@ -99,7 +100,7 @@
                 <li><b>CREA</b> - mobile app for NGO. Developed UI using HTML and CSS.</li>
             </ul>
         </section>
-        <section class="interests">
+        <section id="interest_section" class="interests">
             <h2 id="interests"><i class="fas fa-heart" aria-hidden="true"></i> Interests</h2>
             <ul>
                 <li>Front-end Development</li>
@@ -112,7 +113,7 @@
                 <li>Tech experiments</li>
             </ul>
         </section>
-        <section class="contact">
+        <section id="contact_section" class="contact">
             <h2 id="contact"><i class="fas fa-address-card" aria-hidden="true"></i> Contact Information</h2>
             <ul>
                 <li><a href="mailto:info@langara.ca" aria-label="Email"><i class="fas fa-envelope"
@@ -135,7 +136,7 @@
     <footer>
         <small>© 2020, Sumeet Kumar, all rights reserved.</small>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>
