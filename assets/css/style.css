@@ -147,7 +147,7 @@ button:active, button:hover {
 }
 
 /* Start for medium and large screens */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     html {
         background-color: cornflowerblue;
     }
@@ -155,7 +155,7 @@ button:active, button:hover {
     nav ul {
         padding: 0.5rem;
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
     }
 
     nav ul li {
