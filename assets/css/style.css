@@ -135,10 +135,15 @@ button:active, button:hover {
     outline: none;
 }
 
-.projects ul li a {
+.projects ul li a, .projects_container section a {
     color: #da3b00;
     font-weight: bold;
     text-decoration: none;
+}
+
+.projects_wrapper {
+    max-width: 1440px;
+    margin: auto;
 }
 
 /* Highlighting a card on menu click */
@@ -219,4 +224,58 @@ button:active, button:hover {
         padding-left: 0;
         max-width: 18rem;
     }
+
+    .projects_container section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .projects_container section h2 {
+        grid-column: 1 / -1;
+        grid-row: 1 / span 1;
+    }
+    
+    .projects_container section p {
+        margin: 0;
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    
+    .projects_container section img {
+        margin: auto;
+        max-width: 90%;
+    }
+    
+    .project2 section img {
+        margin: auto;
+        max-width: 60%;
+    }
+
+    .projects_container section img:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 3 / span 1;
+    }
+
+    .projects_container section img:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 4 / span 1;
+    }
+
+    .projects_container section img:nth-of-type(3) {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .projects_container section img:nth-of-type(4) {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .projects_container section img:nth-of-type(5) {
+        grid-column: 2 / span 1;
+        grid-row: 4 / span 1;
+    }
+
 }
