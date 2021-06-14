@@ -146,10 +146,45 @@ button:active, button:hover {
     margin: auto;
 }
 
+.projects_wrapper section h2 {
+    width: 100%;
+}
+
+.projects_wrapper section .about_project {
+    width: 100%;
+    max-width: 900px;
+}
+
 .projects_wrapper section a img:hover {
     box-shadow: 0 0 8px #da3b00;
 }
 
+.prototype_images {
+    display: flex;
+    max-width: 900px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.prototype_images a {
+    max-width: 414px;
+}
+    
+.projects_container section a img {
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+h3 {
+    width: 100%;
+    max-width: 900px;
+}
+
+.mt_4 {
+    margin-top: 4rem;
+}
 /* Highlighting a card on menu click */
 .highlight {
     box-shadow: 0px 0px 8px 10px tomato;
@@ -230,31 +265,14 @@ button:active, button:hover {
     }
 
     .projects_container section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto repeat(3, 1fr);
-        grid-gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .projects_container section h2 {
-        grid-column: 1 / -1;
-        grid-row: 1 / span 1;
-    }
-    
     .projects_container section p {
         margin: 0;
     }
-    
-    .projects_container section a img {
-        margin: auto;
-        max-width: 90%;
-    }
 
-    .project2 section a {
-        display: flex;
-    }
-    
-    .project2 section a img {
-        max-width: 60%;
-    }
 }
