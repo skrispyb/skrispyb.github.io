@@ -1,5 +1,5 @@
 function rmvClass() {
-    $("#about_section, #eduction_section, #employment_section, #skill_section, #project_section, #interest_section, #contact_section").removeClass("highlight");
+    $("#about_section, #eduction_section, #employment_section, #skill_section, #project_section, #interest_section, #contact_section, #project_1, #project_2").removeClass("highlight");
 }
 
 $("#abt").click(function() {
@@ -28,5 +28,13 @@ $("#intr").click(function() {
 });
 $("#cont").click(function() {
     $("#contact_section").addClass("highlight");
+    setTimeout(rmvClass, 2000);
+});
+$("#proj1").click(function() {
+    $("#project_1").addClass("highlight");
+    setTimeout(rmvClass, 2000);
+});
+$("#proj2").click(function() {
+    $("#project_2").addClass("highlight");
     setTimeout(rmvClass, 2000);
 });
