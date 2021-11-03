@@ -1,0 +1,24 @@
+/* Space invaders Styles starts */
+main {
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 100%;
+    background-color: #f3f3f3;
+}
+
+.game {
+    border: 1px solid black;
+    background-color: steelblue;
+    float: left;
+}
+
+canvas {
+    margin-right: 1rem;
+}
+
+button {
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+/* Space invaders Styles ends */
