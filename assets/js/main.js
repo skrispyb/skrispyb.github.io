@@ -44,15 +44,15 @@ $("#cont").click(function() {
         $("#contact_section").removeClass("highlight");
     }, 2000);
 });
-$("#proj1").click(function() {
-    $("#project_1").addClass("highlight");
+$("#proj3").click(function() {
+    $("#project_3").addClass("highlight");
     setTimeout(() => {
-        $("#project_1").removeClass("highlight");
+        $("#project_3").removeClass("highlight");
     }, 2000);
 });
-$("#proj2").click(function() {
-    $("#project_2").addClass("highlight");
+$("#proj4").click(function() {
+    $("#project_4").addClass("highlight");
     setTimeout(() => {
-        $("#project_2").removeClass("highlight");
+        $("#project_4").removeClass("highlight");
     }, 2000);
 });
