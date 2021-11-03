@@ -44,6 +44,18 @@ $("#cont").click(function() {
         $("#contact_section").removeClass("highlight");
     }, 2000);
 });
+$("#proj1").click(function() {
+    $("#project_1").addClass("highlight");
+    setTimeout(() => {
+        $("#project_1").removeClass("highlight");
+    }, 2000);
+});
+$("#proj2").click(function() {
+    $("#project_2").addClass("highlight");
+    setTimeout(() => {
+        $("#project_2").removeClass("highlight");
+    }, 2000);
+});
 $("#proj3").click(function() {
     $("#project_3").addClass("highlight");
     setTimeout(() => {
