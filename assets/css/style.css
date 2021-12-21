@@ -11,7 +11,7 @@ html {
 
 body {
     margin: 0;
-    background-image: url("../images/bar-chart-horizontal-line.png");
+    background-image: url("../images/bar-chart-horizontal-line1.png");
     background-repeat: repeat;
 }
 
@@ -29,6 +29,10 @@ nav ul {
     background: #444444;
     padding: 0;
     margin: 0;
+}
+
+ul li, p {
+    line-height: 1.5;
 }
 
 nav ul li {
