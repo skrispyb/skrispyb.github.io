@@ -3,6 +3,10 @@
 
 /* font-family: 'Rubik', sans-serif; */
 
+* {
+    box-sizing: border-box;
+}
+
 /* Start for small screens */
 html {
     background-color: lightgreen;
@@ -25,7 +29,7 @@ nav, main {
     margin-right: auto;
 }
 
-nav ul {
+header nav ul {
     background: #444444;
     padding: 0;
     margin: 0;
@@ -35,24 +39,24 @@ ul li, p {
     line-height: 1.5;
 }
 
-nav ul li {
+header nav ul li {
     list-style-type: none;
     padding: 0.5rem 1rem;
     border-bottom: 1px solid white;
     text-align: center;
 }
 
-nav ul .last_nav_item {
+header nav ul .last_nav_item {
     border-bottom: 0;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: White;
     font-size: 1.2rem;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: #ff946d;
 }
 
@@ -177,7 +181,6 @@ button:active, button:hover {
 }
     
 .projects_container section a img {
-    margin: 2rem auto;
     max-width: 900px;
 }
 
@@ -186,12 +189,20 @@ h3 {
     max-width: 900px;
 }
 
-.mt_4 {
-    margin-top: 4rem;
-}
 /* Highlighting a card on menu click */
 .highlight {
     box-shadow: 0px 0px 8px 10px tomato;
+}
+
+.iFrame_wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.inktober_img {
+    max-width: 576px!important;
 }
 
 /* Start for medium and large screens */
@@ -200,19 +211,19 @@ h3 {
         background-color: cornflowerblue;
     }
 
-    nav ul {
+    header nav ul {
         padding: 0.5rem;
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto auto;
     }
 
-    nav ul li {
+    header nav ul li {
         border-bottom: 0;
         padding: 0 0.5rem;
         border-right: 1px solid white;
     }
 
-    nav ul .last_nav_item {
+    header nav ul .last_nav_item {
         border-right: 0;
     }
 
@@ -279,4 +290,226 @@ h3 {
         margin: 0;
     }
 
+}
+
+/* CSS Transitions Styling */
+
+.transitions_wrapper {
+    width: 900px;
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.transitions_wrapper article {
+    border: 1px solid lightgray;
+    flex: 1 0 30%;
+    text-align: center;
+}
+
+.transitions_wrapper ul {
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.transitions_wrapper li {
+    list-style-type: none;
+    flex: 1 0 20%;
+    background-color: black;
+}
+
+.transitions_wrapper i {
+    font-size: 2rem;
+}
+
+.transitions_wrapper span {
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    font-size: 14px;
+}
+
+.transitions_wrapper ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+}
+
+.transitions_wrapper a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 1rem;
+    transition: all 0.5s;
+}
+
+.transitions_wrapper article:last-of-type {
+    padding: 1rem;
+}
+
+.transitions_wrapper article:last-of-type h3 {
+    margin: 0;
+}
+
+
+/* 1. Background color */
+.transition01 ul li a:hover {
+    background-color: hotpink;
+}
+
+
+/* 2. Color */
+.transition02 ul li a:hover {
+    color: hotpink;
+}
+
+
+/* 3. Single item color */
+.transition03 ul li a:hover i {
+    color: hotpink;
+}
+
+
+/* 4. Box shadow */
+.transition04 ul li a:hover {
+    box-shadow: 0 0 8px 0px purple;
+}
+
+
+/* 5. Border Bottom */
+.transition05 ul li a, .transition06 ul li a {
+    border-bottom: 4px solid white;
+}
+
+.transition05 ul li a:hover {
+    border-bottom-color: orange;
+}
+
+
+/* 6. Border bottom V2 */
+.transition06 ul li:nth-of-type(1) a:hover {
+    border-bottom-color: hotpink;
+}
+
+.transition06 ul li:nth-of-type(2) a:hover {
+    border-bottom-color: palegreen;
+}
+
+.transition06 ul li:nth-of-type(3) a:hover {
+    border-bottom-color: orangered;
+}
+
+.transition06 ul li:nth-of-type(4) a:hover {
+    border-bottom-color: skyblue;
+}
+
+
+/* 7. Background color, color */
+
+.transition07 ul li a:hover {
+    background-color: hotpink;
+    color: black;
+}
+
+
+/* 8. Background color, color , delay */
+.transition08 ul li a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.transition08 ul li a i, .transition08 ul li a small {
+    transition-delay: 0.25s;
+    transition: all 0.25s;
+}
+
+
+/* 9. Width */
+.transition09 ul {
+    flex-direction: column;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.transition09 ul li {
+    width: 100%;
+}
+
+.transition09 ul li a {
+    align-items: start;
+}
+
+.transition09 ul li {
+    overflow: hidden;
+}
+
+.transition09 ul li a {
+    background-color: orange;
+    width: 4rem;
+    transition-property: width;
+    transition: all 0.5s;
+}
+.transition09 ul li a:hover {
+    width: 100%;
+}
+
+
+/* 10. Rotation */
+.transition10 ul li a i {
+    transition-duration: 0.5s;
+}
+.transition10 ul li a:hover i {
+    transform: rotate(360deg);
+}
+
+
+/* 11. Rotation: X-Axis */
+.transition11 ul li a i {
+    transition-duration: 0.5s;
+}
+.transition11 ul li a:hover i {
+    transform: rotateY(360deg);
+}
+
+
+/* 12. Rotation: Y-Axis */
+.transition12 ul li a i {
+    transition-duration: 0.5s;
+}
+.transition12 ul li a:hover i {
+    transform: rotateX(360deg);
+}
+
+
+/* 13. Text input */
+.transitions_wrapper .searchbar {
+    margin-top: 1rem;
+}
+
+.transitions_wrapper .searchbar i {
+    font-size: 1rem;
+}
+
+.transitions_wrapper .searchbar input {
+    transition-property: width;
+    transition: all 0.5s;
+    width: 10rem;
+    margin-left: 0.5rem;
+}
+
+.transitions_wrapper .searchbar input:focus {
+    width: calc(100% - 2rem);
+}
+
+/* overriding icons color in CSS Transitions section */
+.projects_container section .transitions_wrapper a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.projects_wrapper section .transitions_wrapper a img:hover {
+    box-shadow: initial;
 }
