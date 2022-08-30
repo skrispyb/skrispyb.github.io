@@ -96,6 +96,15 @@ small {
     color: #757575;
 }
 
+#about {
+    display: flex;
+    align-items: center;
+}
+
+.profile_icon {
+    width: 28px!important;
+}
+
 .contact ul {
     padding: 0;
     margin: 0;
@@ -174,6 +183,15 @@ button:active, button:hover {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.wrapper_class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 .prototype_images a {
@@ -203,6 +221,10 @@ h3 {
 
 .inktober_img {
     max-width: 576px!important;
+}
+
+.space_invader_img {
+    max-width: 360px!important;
 }
 
 /* Start for medium and large screens */
