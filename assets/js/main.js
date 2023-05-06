@@ -109,3 +109,38 @@ const scrollToTop = () => {
     });
 }
 scrollToTop();
+
+// Abstract Background Generate
+let container = document.querySelector(".container");
+for (let i = 0; i < 50; i++) {
+    let blocks = document.createElement("div");
+    blocks.classList.add('block');
+    container.appendChild(blocks);
+}
+
+function changeShape() {
+    if(container.classList.contains('circle')) {
+        container.classList.remove('circle');
+        container.classList.add('squircle');
+    } else if(container.classList.contains('squircle')) {
+        container.classList.remove('squircle');
+    } else if(!container.classList.contains('squircle') && !container.classList.contains('circle')) {
+        container.classList.add('circle');
+    }
+}
+
+function generate() {
+  anime({
+    targets : '.block',
+    translateX : function() {
+      return anime.random(-400,400);
+    },
+    translateY : function() {
+      return anime.random(-200,200);
+    },
+    scale : function() {
+      return anime.random(1, 5);
+    }
+  })
+}
+generate();
