@@ -213,6 +213,7 @@ h3 {
 
 .inktober_img {
     max-width: 576px!important;
+    height: 100%;
 }
 
 .space_invader_img {
@@ -309,7 +310,8 @@ h3 {
 /* CSS Transitions Styling */
 
 .transitions_wrapper {
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     margin-top: 1.4rem;
     margin-bottom: 2rem;
 }
@@ -615,6 +617,7 @@ h3 {
     min-height: 400px;
     background-color: #202020;
     margin: 16px;
+    position: relative;
 }
 
 .container {
