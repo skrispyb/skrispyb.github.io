@@ -7,6 +7,7 @@
   <title>Sumeet Kumar e-Portfolio: Other Projects</title>
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="https://kit.fontawesome.com/eab391ba4b.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="assets/js/main.js" defer></script>
 </head>
 
@@ -255,6 +256,24 @@
     
     <div class="projects_container">
       <section id="project_5">
+        <h2 id="dimpledesk">CSS Animation</h2>
+        <h3>Abstract Background Generator</h3>
+        <div class="transitions_wrapper">
+          <article>
+            <small>Click "Generate" or "Change Shape" to see effects</small>
+            <div class="animate_abstract_background">
+              <div class="container">
+                <button class="ripple" onclick="generate();">Generate</button>
+                <button class="ripple circleBtn" onclick="changeShape(); generate();">Change Shape</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+    
+    <div class="projects_container">
+      <section id="project_6">
         <h2 id="dimpledesk">Game</h2>
         <h3>Space Invader</h3>
         <a href="/space-invaders.html" target="blank">Click here to play Space Invader</a>

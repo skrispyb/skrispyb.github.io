@@ -144,24 +144,6 @@ footer small {
     color: white;
 }
 
-button {
-    position: fixed;
-    bottom: 1rem;
-    font-weight: bold;
-    right: 1rem;
-    z-index: 2;
-    border-radius: 50%;
-    border: 0;
-    background-color: #da3b00;
-    color: white;
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-button:active, button:hover {
-    outline: none;
-}
-
 .projects ul li a, .projects_container section a {
     color: #da3b00;
     font-weight: bold;
@@ -624,3 +606,79 @@ h3 {
     box-sizing:border-box;
     transition:all .2s linear;
 }
+
+/* Abstract Background Generate */
+.animate_abstract_background {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 400px;
+    background-color: #202020;
+    margin: 16px;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    max-width: 834px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.container .block {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #444;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+}
+  
+.container.circle .block {
+    border-radius: 50%;
+}
+
+.container.squircle .block {
+    border-radius: 4px;
+}
+
+.container .block:nth-child(3n+1) {
+    background-color: #006ba6;
+}
+  
+.container .block:nth-child(3n+2) {
+    background-color: #a4b0f5;
+}
+  
+.container .block:nth-child(3n+3) {
+    background-color: #ffbc42;
+}
+  
+.container button {
+    position: relative;
+    z-index: 1;
+    margin: 10px;
+    border: none;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
