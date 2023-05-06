@@ -69,6 +69,10 @@ $("#proj4").click(function() {
     }, 2000);
 });
 
+// Copyright current year
+let currentYear = new Date().getFullYear();
+document.getElementById('currentYear').innerHTML = currentYear;
+
 // Scroll to top
 const scrollToTop = () => {
     let progressPath = document.querySelector( '.rn-progress-parent path' );

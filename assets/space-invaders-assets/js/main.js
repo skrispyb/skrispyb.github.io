@@ -371,3 +371,7 @@ endGame.addEventListener("click", () => {
 const tank = new Tank();
 const ufo = new UFO();
 setDrones();
+
+// Copyright Current Year 
+let currentYear = new Date().getFullYear();
+document.getElementById('currentYear').innerHTML = currentYear;
