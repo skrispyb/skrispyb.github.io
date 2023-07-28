@@ -43,13 +43,20 @@
       <h2 id="about">
         <img src="assets/images/favicon.png" class="profile_icon">&nbsp;About
       </h2>
-      <img class="img_mob" src="assets/images/sumeet.png" />
+      <!-- <img class="img_mob" src="assets/images/sumeet.png" /> -->
+      <div class="flip-card">
+        <div class="flip-card-front">
+          <img class="img_mob" src="assets/images/sumeet.png" />
+        </div>
+        <div class="flip-card-back">
+          <img class="img_mob" src="assets/images/Avatar_400x400.png" />
+        </div>
+      </div>
       <div class="about_content">
         <h1>Sumeet Kumar</h1>
         <p>
-          I am a Web Developer with 3 years of experience using front-end development tools, and libraries for developing, debugging, and testing projects on different tech stacks. Result-driven mindset to find potential solutions to problems by reading through official documentation and stack overflow. Creative thinking to design and develop products or services with outstanding user experience. I studied software development, web development, and graphic designing. I worked as a Front-end Developer at Razorpod. I studied web and mobile app development at Langara College. Currently, I am working as a Web Developer at Tech Bytes Foundation. I want to become a full-stack developer focusing on front-end development.
+          I am a Web Developer with over 2 years of experience using front-end development tools, and libraries for developing, debugging, and testing projects on different tech stacks. Result-driven mindset to find potential solutions to problems by reading through official documentation and stack overflow. Creative thinking to design and develop products or services with outstanding user experience. I graduated with Post-Degree Diploma in Web and Mobile Application Design and development from Langara College, Vancouver, British Columbia, Canada. Currently, I am working as a Web Developer at Tech Bytes Foundation, Greater Vancouver, British Columbia, Canada. I want to become a Full-Stack Developer focusing on Front-End Development.
         </p>
-
       </div>
     </section>
     <section id="eduction_section" class="education">
@@ -58,10 +65,8 @@
       </h2>
       <div class="dash"></div>
       <p>
-        PDD in Web and mobile app development, September 2020 - April 2022<br />
-        <small>Langara College, Vancouver, British Columbia, Canada</small><br /><br />
-        B.Tech in Computer Science and Engineering, 2018<br />
-        <small>Kurukshetra University, Kurukshetra, Haryana, India</small>
+        Post-Degree Diploma in Web and Mobile Application Design and Development, September 2020 - April 2022<br />
+        <small>Langara College, Vancouver, British Columbia, Canada</small>
       </p>
     </section>
     <section id="employment_section" class="employment">
@@ -70,13 +75,9 @@
       </h2>
       <p>
         Web Developer, January 2022 - Present<br />
-        <small>Tech Bytes Foundation, Surrey, British Columbia, Canada</small><br /><br />
+        <small>Tech Bytes Foundation, Greater Vancouver, British Columbia, Canada</small><br /><br />
         VLS Service Assistant (Web Developer), May 2021 - December 2021<br />
         <small>Langara College, Vancouver, British Columbia, Canada</small><br /><br />
-        Front-end Developer, October 2019 - August 2020<br />
-        <small>Razorpod.in, Gurugram, Haryana, India</small><br /><br />
-        Industrial training, June 2015 - August 2015<br />
-        <small>Blippar.com, Gurugram, Haryana, India</small>
       </p>
     </section>
     <section id="skill_section" class="skills">
@@ -112,22 +113,17 @@
             <li>Custom Theme</li>
           </ul>
         </li>
-        <li>Android</li>
-        <li>iOS</li>
-        <li>Security & Server Admin</li>
-        <ul>
-          <li>MongoDB</li>
-          <li>GraphQL</li>
-          <li>Firebase database</li>
-          <li>MySQL</li>
-        </ul>
+        <li>MongoDB</li>
+        <li>GraphQL</li>
+        <li>Firebase database</li>
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
         <li>Figma</li>
-        <li>SVG Animations</li>
         <li>Photoshop</li>
         <li>Illustrator</li>
         <li>Premiere Pro</li>
         <li>AVIDemux</li>
-        <li>Audacity</li>
+        <li>SVG Animations</li>
       </ul>
     </section>
     <section id="project_section" class="projects">
@@ -189,12 +185,12 @@
       <ul>
         <li>Video Editing</li>
         <ul>
-          <li>Editing videos captured using camera.</li>
+          <li>Editing videos captured using camera. (<a href="/other-projects.html" target="_blank">demos</a>)</li>
           <li>Editing screen captures of highlights of computer games.</li>
         </ul>
         <li>Photo Editing</li>
         <ul>
-          <li>Editing photos captured using camera.</li>
+          <li>Editing photos captured using camera. (<a href="/other-projects.html" target="_blank">demos</a>)</li>
           <li>Creating banners using pictures and illustrations.</li>
           <li>Creating gif animations.</li>
         </ul>
@@ -215,12 +211,12 @@
               aria-hidden="true"></i>
             sumeetsheoran9@gmail.com</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="tel:+16043520389" aria-label="Phone"><i class="fas fa-phone-square-alt" aria-hidden="true"></i> +1
             604 352 0389</a>
-        </li>
+        </li> -->
         <li>
-            <a href="https://github.com/skrispyb" aria-label="Github" target="_blank"
+            <a href="https://github.com/skrispyb/" aria-label="Github" target="_blank"
               ><i class="fab fa-github-square" aria-hidden="true"></i> Github</a>
           </li>
           <!-- <li>
@@ -248,6 +244,22 @@
               aria-hidden="true"></i> LinkedIn</a>
         </li>
       </ul>
+      <form class="contact-form" action="https://formspree.io/f/xgejowrg" method="POST">
+        <label for="name">
+          Name
+        </label>
+        <input type="name" name="name" placeholder="Please enter your name here..." required>
+        <label for="email">
+          Email
+        </label>
+        <input type="email" name="email" placeholder="Please enter your email here..." required>
+        <label for="message">
+          Message
+        </label>
+        <textarea name="message" placeholder="Please enter your message here..." required></textarea>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
     </section>
   </main>
 

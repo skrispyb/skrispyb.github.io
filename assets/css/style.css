@@ -115,6 +115,28 @@ small {
     width: 28px!important;
 }
 
+/* Profile Image */
+.flip-card {
+    height: max-content;
+    position: relative;
+}
+
+.flip-card .flip-card-front {
+    display: block;
+}
+
+.flip-card .flip-card-back {
+    display: none;
+}
+
+.flip-card:hover .flip-card-front {
+    display: none;
+}
+
+.flip-card:hover .flip-card-back {
+    display: block;
+}
+
 .contact ul {
     padding: 0;
     margin: 0;
@@ -144,7 +166,7 @@ footer small {
     color: white;
 }
 
-.projects ul li a, .projects_container section a {
+.projects ul li a, .projects_container section a, .interests ul li a {
     color: #da3b00;
     font-weight: bold;
     text-decoration: none;
@@ -260,8 +282,9 @@ h3 {
     }
     
     .about_content {
+        margin-top: 1rem;
         padding-left: 1rem;
-        max-width: 30rem;
+        /* max-width: 30rem; */
     }
     
     main {
@@ -290,6 +313,7 @@ h3 {
     }
 
     .about_content {
+        margin-top: 1rem;
         padding-left: 0;
         max-width: 18rem;
     }
@@ -675,13 +699,61 @@ h3 {
 .ripple {
     background-position: center;
     transition: background 0.8s;
-  }
-  .ripple:hover {
+}
+.ripple:hover {
     background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
-  }
-  .ripple:active {
+}
+.ripple:active {
     background-color: #6eb9f7;
     background-size: 100%;
     transition: background 0s;
-  }
+}
+
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.contact-form label {
+    margin-top: 0.5rem;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-top: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.contact-form input:focus-visible, .contact-form textarea:focus-visible {
+    outline: cornflowerblue auto 1px;
+}
+.contact-form input {
+    width: 100%;
+    max-width: 250px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+}
+
+.contact-form button {
+    margin-top: 0.5rem;
+    font-size: 18px;
+    background-color: #da3b00;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
   
+.contact-form button:hover {
+    background-color: #b23000;
+}

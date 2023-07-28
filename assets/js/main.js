@@ -148,3 +148,6 @@ function generate() {
   })
 }
 generate();
+
+// Contact Form
+let disable = true;
